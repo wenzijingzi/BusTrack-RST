@@ -1,34 +1,18 @@
-# BoT-SORT
+# BusTrack-RTS
 
-> [**BoT-SORT: Robust Associations Multi-Pedestrian Tracking**](https://arxiv.org/abs/2206.14651)
-> 
-> Nir Aharon, Roy Orfaig, Ben-Zion Bobrovsky
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/bot-sort-robust-associations-multi-pedestrian/multi-object-tracking-on-mot17)](https://paperswithcode.com/sota/multi-object-tracking-on-mot17?p=bot-sort-robust-associations-multi-pedestrian)
-
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/bot-sort-robust-associations-multi-pedestrian/multi-object-tracking-on-mot20-1)](https://paperswithcode.com/sota/multi-object-tracking-on-mot20-1?p=bot-sort-robust-associations-multi-pedestrian)
-> 
-> *[https://arxiv.org/abs/2206.14651](https://arxiv.org/abs/2206.14651)*
-
-<p align="center"><img src="assets/Results_Bubbles.png"/></p>
 
 ## Highlights 🚀
+- A training-free spatio-temporal enhancement framework for online MOT under mobile cameras
+- Spatial–Temporal NMS stabilizes detections using short-term temporal support
+- Foreground-aware GMC improves ego-motion estimation in bus-front scenarios
+- Soft-constraint association enhances identity consistency under occlusion
+- State-of-the-art performance on BusFrontMOT and competitive results on MOT17
 
-- YOLOX & YOLOv7 support
-- Multi-class support
-- Camera motion compensation
-- Re-identification
-
-## Coming Soon
-- [ ] Trained YOLOv7 models for MOTChallenge.
-- [x] YOLOv7 detector.
-- [x] Multi-class support.
-- [x] Create OpenCV VideoStab GMC python binding or <u>write Python version<u>.
-- [ ] Deployment code.
 
 ## Abstract
 
-The goal of multi-object tracking (MOT) is detecting and tracking all the objects in a scene, while keeping a unique identifier for each object. In this paper, we present a new robust state-of-the-art tracker, which can combine the advantages of motion and appearance information, along with camera-motion compensation, and a more accurate Kalman filter state vector. Our new trackers BoT-SORT, and BoT-SORT-ReID rank first in the datasets of MOTChallenge [29, 11] on both MOT17 and MOT20 test sets, in terms of all the main MOT metrics: MOTA, IDF1, and HOTA. For MOT17: 80.5 MOTA, 80.2 IDF1, and 65.0 HOTA are achieved.
+Online multi-object tracking (MOT) under mobile camera conditions remains challenging due to unstable detections, motion prediction errors caused by camera ego-motion, and identity inconsistency under frequent occlusions. Most existing online trackers implicitly assume relatively stable camera viewpoints, which often leads to performance degradation when significant camera motion is present. To address this problem, we propose BusTrack-RST, a training-free and plug-and-play spatio-temporal enhancement framework for online MOT. The proposed framework improves tracking robustness by progressively suppressing uncertainty propagation at key stages of the tracking pipeline without modifying the detector architecture or requiring additional appearance training. Specifically, a Spatial–Temporal Non-Maximum Suppression (ST-NMS) module is introduced to stabilize detection sequences using short-term temporal consistency. A foreground-aware ego-motion compensation strategy is further designed to improve motion estimation by restricting feature matching to static background regions. In addition, a soft-constraint association strategy reshapes the matching cost through continuous regularization, enhancing identity consistency under occlusion and short-term missed detections. Experiments on the BusFrontMOT dataset and the MOT17 benchmark demonstrate that BusTrack-RST consistently improves MOTA, IDF1, and HOTA while maintaining near real-time performance.
 
 
 ### Visualization results on MOT challenge test set
