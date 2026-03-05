@@ -15,14 +15,16 @@
 Online multi-object tracking (MOT) under mobile camera conditions remains challenging due to unstable detections, motion prediction errors caused by camera ego-motion, and identity inconsistency under frequent occlusions. Most existing online trackers implicitly assume relatively stable camera viewpoints, which often leads to performance degradation when significant camera motion is present. To address this problem, we propose BusTrack-RST, a training-free and plug-and-play spatio-temporal enhancement framework for online MOT. The proposed framework improves tracking robustness by progressively suppressing uncertainty propagation at key stages of the tracking pipeline without modifying the detector architecture or requiring additional appearance training. Specifically, a Spatial–Temporal Non-Maximum Suppression (ST-NMS) module is introduced to stabilize detection sequences using short-term temporal consistency. A foreground-aware ego-motion compensation strategy is further designed to improve motion estimation by restricting feature matching to static background regions. In addition, a soft-constraint association strategy reshapes the matching cost through continuous regularization, enhancing identity consistency under occlusion and short-term missed detections. Experiments on the BusFrontMOT dataset and the MOT17 benchmark demonstrate that BusTrack-RST consistently improves MOTA, IDF1, and HOTA while maintaining near real-time performance.
 
 
-### Visualization results on MOT challenge test set
 
 
-https://user-images.githubusercontent.com/57259165/177045531-947d3146-4d07-4549-a095-3d2daa4692be.mp4
 
-https://user-images.githubusercontent.com/57259165/177048139-05dcb382-010e-41a6-b607-bb2b76afc7db.mp4
+## Demo Videos
 
-https://user-images.githubusercontent.com/57259165/180818066-f67d1f78-515e-4ee2-810f-abfed5a0afcb.mp4
+<video src="assets/BF_13.mp4" width="800" controls></video>
+
+<video src="assets/BF_02.mp4" width="800" controls></video>
+
+<video src="assets/BF_05.mp4" width="800" controls></video>
 
 ## Tracking performance
 ### Results on BusTrack-RTS test set
