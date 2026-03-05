@@ -17,14 +17,16 @@ Online multi-object tracking (MOT) under mobile camera conditions remains challe
 
 
 
-
 ## Demo Videos
 
-<video src="assets/BF_13.mp4" width="800" controls></video>
+### Scene BF_13
+[![Demo](assets/demo13.png)](assets/BF_13.mp4)
 
-<video src="assets/BF_02.mp4" width="800" controls></video>
+### Scene BF_02
+[![Demo](assets/demo2.png)](assets/BF_02.mp4)
 
-<video src="assets/BF_05.mp4" width="800" controls></video>
+### Scene BF_05
+[![Demo](assets/demo5.png)](assets/BF_05.mp4)>
 
 ## Tracking performance
 ### Results on BusTrack-RTS test set
