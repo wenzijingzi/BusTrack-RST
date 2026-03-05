@@ -1,0 +1,3 @@
+对MOT17/20进行ST-NMS目标检测，运行  03temporal_nms_det_postprocess_X _MOT.py
+然后对其进行多目标追踪，运行  02track_external_dets _MOT.py
+然后进行评估  ，运行  05eval_all_trackers_final_FPS_MOT.py
