@@ -131,18 +131,3 @@ cd <BusTrack-RTS_dir>
 
 # BusTrack-RTS_dir
 python3 tools/BFront_MOT/05eval_all_trackers_final_FPS.py  --default-parameters --fuse
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
